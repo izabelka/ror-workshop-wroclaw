@@ -1,10 +1,8 @@
 puts "Seeds: start"
 TEACHER_TITLES = %w(Dr. Prof. TA)
-#admin
+SUBJECT_NAMES = %w(Biology Chemistry Physics Math English Geography History)
 User.create!(email: 'admin@admin.com',password: 'adminadmin')
-#User.create!(email: 'dupa22@dupa22.com',password: 'dupadupa222')
 
-#40
 3.times do
   Teacher.create!(
     first_name: Faker::Name.first_name,
@@ -16,7 +14,7 @@ end
 teachers = Teacher.all
 5.times do
   SubjectItem.create!(
-    title: Faker::Lorem.sentence,
+    title: SUBJECT_NAMES.sample,
     teacher: teachers.sample
   )
 end
@@ -24,7 +22,8 @@ end
 25.times do
   Student.create!(
     first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name
+    last_name: Faker::Name.last_name,
+    birthdate: Faker::Date.between(50.years.ago, 10.years.ago)
   )
 end
 
