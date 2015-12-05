@@ -1,4 +1,4 @@
-https://travis-ci.org/travis-ci/travis-web.svg?branch=master
+![alt tag](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)
 
 RoR Workshops
 ================
