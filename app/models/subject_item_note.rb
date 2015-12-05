@@ -1,5 +1,6 @@
 class SubjectItemNote < ActiveRecord::Base
   belongs_to :student
+  belongs_to :subject_item #Iza
 
   validates :student_id, :subject_item_id, presence: true
 
