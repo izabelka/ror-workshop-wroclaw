@@ -1,4 +1,4 @@
-![alt tag](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)
+[![Build Status](https://travis-ci.org/izabelka/wroclaw2.svg?branch=master)](https://travis-ci.org/izabelka/wroclaw2)
 
 RoR Workshops
 ================
