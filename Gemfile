@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.2.3'
-#
+
+gem 'dotenv-rails'
 gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'decent_exposure'
@@ -17,7 +18,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'simple_form'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
-gem 'dotenv-rails'
 gem 'gretel'
 gem 'faker'
 gem 'factory_girl_rails'
@@ -33,8 +33,6 @@ end
 
 group :development, :test do
   gem 'byebug'
-  gem 'factory_girl_rails'
-  gem 'faker'
   gem 'rspec-rails'
   gem 'spring'
   gem 'web-console', '~> 2.0'
